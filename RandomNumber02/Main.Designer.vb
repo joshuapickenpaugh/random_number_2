@@ -26,6 +26,8 @@ Partial Class Main
         Me.btnDidIGuessCorrectly = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblResponse = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtGuess
@@ -42,7 +44,7 @@ Partial Class Main
         Me.btnDidIGuessCorrectly.Name = "btnDidIGuessCorrectly"
         Me.btnDidIGuessCorrectly.Size = New System.Drawing.Size(260, 93)
         Me.btnDidIGuessCorrectly.TabIndex = 1
-        Me.btnDidIGuessCorrectly.Text = "Did I guess Correctly?"
+        Me.btnDidIGuessCorrectly.Text = "&Did I guess Correctly?"
         Me.btnDidIGuessCorrectly.UseVisualStyleBackColor = True
         '
         'Label1
@@ -63,11 +65,31 @@ Partial Class Main
         Me.lblResponse.TabIndex = 3
         Me.lblResponse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(11, 252)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(260, 47)
+        Me.btnClear.TabIndex = 4
+        Me.btnClear.Text = "&Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(11, 305)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(260, 38)
+        Me.btnExit.TabIndex = 5
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 260)
+        Me.ClientSize = New System.Drawing.Size(284, 355)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lblResponse)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDidIGuessCorrectly)
@@ -84,4 +106,6 @@ Partial Class Main
     Friend WithEvents btnDidIGuessCorrectly As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lblResponse As Label
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
 End Class
